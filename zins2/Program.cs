@@ -13,7 +13,7 @@ class Program
 
         for (int Jahr = 1; Jahr <= Jahrezuberechnen; Jahr++)
         {
-            zwischenzahl = Startkapital * Zinssatz;
+            zwischenzahl = Startkapital / Zinssatz;
             Startkapital = Startkapital - zwischenzahl;
             Console.WriteLine($"Jahr {Jahr}: Kapital = {Startkapital:C2}");
         }
